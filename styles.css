@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    overflow-x: hidden;
+
+}
+
+/* Cabeçalho */
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: right;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Seção Hero (Principal) */
+.hero {
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    border-bottom: 1px solid #e0e0e0;
+    min-height: 100vh;
+
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero-buttons .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #333e77;
+
+    color: #fff;
+}
+
+.hero-image {
+    max-width: 40%;
+}
+
+.perfil {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.curriculo,
+
+/* Estilos para a Seção Sobre */
+.sobre {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.perfil-sobre {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #555;
+    font-size: 1.2rem;
+}
+
+/* Estilos para a Seção Contato */
+.contato {
+    background-color: #fff;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-height: 100vh;
+}
+
+.contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.contato-form {
+    margin-top: 40px;
+}
+
+.contato-form h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #0056ff;
+}
+
+button {
+    padding: 15px;
+    background-color: #0056ff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003db3;
+}
+
+
+/* Alinhamento à esquerda */
+.curriculo .container,
+.sobre .container,
+.contato .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+/* Seção Currículo */
+.curriculo .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.curriculo h2,
+.sobre h2,
+.contato h2 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+.curriculo-experiencia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.curriculo-experiencia h3 {
+    font-size: 2rem;
+    color: #000;
+}
+
+.btn-cv {
+    padding: 15px 30px;
+    background-color: #0056ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cv:hover {
+    background-color: #003db3;
+}
+
+.experiencia-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Divisórias entre seções */
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 40px 0;
+    border-radius: 5px;
+}
+
+.divider-dashed {
+    width: 100%;
+    height: 2px;
+    border-top: 2px dashed #ccc;
+    margin: 40px 0;
+}
+
+.divider-thick {
+    width: 100%;
+    height: 4px;
+    background-color: #0056ff;
+    margin: 50px 0;
+    border-radius: 5px;
+}
+
+/* Formulário de Contato */
+form {
+    max-width: 600px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

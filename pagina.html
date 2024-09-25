@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho com navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#curriculo">Currículo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <section id="principal" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong
+                        class="titulo-destaque"> com um Front-end de qualidade!</strong></h1>
+                <p class="apresentacao__conteudo__paragrafo">Olá! Sou Guilherme Ribeiro, desenvolvedor Front-end com
+                    especialidade em <strong>React, HTML e CSS</strong>. Ajudo pequenos
+                    negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
+
+                <!-- Botões adicionados -->
+                <div class="hero-buttons">
+                    <a href="https://www.linkedin.com/in/guilherme-ribeiro-9a362b233/" class="btn">LinkedIn</a>
+                    <a href="https://github.com/GuilhermeR2" class="btn">GitHub</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://i.ibb.co/FzYQXW4/profile-pic.png" alt="Guilherme" class="perfil">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção curriculo -->
+    <section id="curriculo" class="curriculo">
+        <div class="container">
+            <h2><span class="curriculo__titulo-icon"></span> Currículo</h2>
+
+            <div class="curriculo-experiencia">
+                <h3>Experiência</h3>
+                <a href="https://drive.google.com/file/d/1r8x-Sf4FA7gZ9eEMgoAmW_Fkq2h6l2-O/view?usp=drive_link"
+                    class="btn-cv">Baixar CV</a>
+            </div>
+
+            <div class="experiencia-item">
+                <h4><span class="ano">2024 – Atual</span></h4>
+                <p class="cargo">Cargo: SEICIT</p>
+                <p class="localizacao">Serra-ES</p>
+                <p> Minhas responsabilidades envolvem o uso de
+                    algumas tecnologias. Utilizo o ArcGIS Pro para realizar
+                    análises e visualizações geoespaciais, além de usar o
+                    Experience Builder para criar e configurar aplicações web
+                    interativas e personalizadas baseadas em mapas. Também
+                    tenho conhecimento em SQL Server, o que me permite
+                    auxiliar no gerenciamento e manipulação de dados
+                    geoespaciais armazenados em bancos de dados relacionais.
+                    Para automação de tarefas, desenvolvimento de scripts e
+                    ferramentas de geoprocessamento personalizadas, faço uso
+                    da linguagem de programação Python. Além disso, utilizo o
+                    pacote Office, com ênfase em Excel, para realizar análises de
+                    dados adicionais e elaborar relatórios detalhados.</p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Email: <a href="gmr14@yopmail.com">gmr14@yopmail.com</a></p>
+            <p>Telefone: (27) 99999-9999 </p>
+            <form action="submit_form.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre mim</h2>
+            <p>Olá! Meu nome é Guilherme Ribeiro e sou um entusiasta de tecnologia e desenvolvimento web. Atualmente,
+                estou
+                estudando Análise e Desenvolvimento de Sistemas, onde aprendo as melhores práticas para criar
+                aplicações modernas e responsivas.</p>
+            <p>Minha jornada no mundo da programação começou há alguns anos, quando decidi explorar a criação de sites e
+                soluções digitais. Desde então, tenho me aprofundado em tecnologias como <strong>React, HTML e
+                    CSS</strong>,
+                que me permitem transformar ideias em projetos concretos.</p>
+            <p>Além de ser desenvolvedor Front-end, atuo como analista de sistemas, onde trabalho na integração de
+                soluções e na análise de requisitos, sempre buscando entender as necessidades dos usuários e
+                entregar produtos de qualidade.</p>
+            <p>Estou sempre aberto a novos desafios e oportunidades de colaboração. Vamos conectar e discutir como posso
+                ajudar o seu negócio a crescer!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
